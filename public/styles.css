@@ -1,0 +1,73 @@
+html {
+    background-color: #8a8a8a;
+    font-family: "ubuntu";
+}
+
+h1 {
+    color: #fff;
+    padding: 10px;
+}
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #e3e3e3;
+}
+
+#heading {
+    background-color: #4700c1;
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input[type="checkbox"] {
+    margin: 0px;
+}
+ul div {
+    border-bottom: 1px solid #000000;
+}
+p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5d00fd;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+}
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    font-size: 20px;
+    background: #e3e3e3;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    border-radius: 0.5em !important;
+    accent-color: #5d00fd;
+}
