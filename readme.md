@@ -1,5 +1,7 @@
 # _A simple To Do List App_
 
+![Screen Shot 2022-02-25 at 22 35 34](https://user-images.githubusercontent.com/20937211/155834125-4d0d69fe-edea-40b7-a045-8b76ceed418c.png)
+
 > In this project i'm using EJS - a templating library to generate HTML markup with plain Javascript. For database i'm using mongoDB installed localy and running on localhost. CSS built from scratch.
 
 ## Installation
