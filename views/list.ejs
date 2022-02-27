@@ -22,8 +22,9 @@
                          <% }) %>
                </ul>
                <form action="/" method="post" class="item">
-                    <input type="text" name="newItem" id="" placeholder="New Item" autofocus autocomplete="off" />
-                    <button type="submit" name="list" value=<%=listTitle %>>+</button>
+                    <input type="text" name="newItem" placeholder="New Item" autofocus autocomplete="off"
+                         onkeyup="if(this.value.length > 0) document.getElementById('add-btn').disabled = false; else document.getElementById('add-btn').disabled = true;" />
+                    <button type="submit" name="list" id="add-btn" value=<%=listTitle %> disabled>+</button>
                </form>
           </div>
      </div>
