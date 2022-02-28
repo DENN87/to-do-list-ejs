@@ -12,13 +12,7 @@ Step 1. In the project directory, you can run:
 npm install
 ```
 
-Step 2. You also must install MongoDB on your **local machine**.
-
-```sh
-'install MongoDB locally, find the details also @ MongoDB Docs'
-```
-
-Step 3. IMPORTANT:
+Step 2. IMPORTANT:
 
 > You must Create a New File in the project directory "nodemon.json" in order to connect to YOUR OWN MongoDB Online.
 > In this file include the following lines:
