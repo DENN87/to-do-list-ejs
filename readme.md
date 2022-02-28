@@ -2,7 +2,7 @@
 
 ![Screen Shot 2022-02-27 at 17 32 34](https://user-images.githubusercontent.com/20937211/155911061-3551a9d8-2683-49b9-a615-e2eb543e2054.png)
 
-> In this project i'm using EJS - a templating library to generate HTML markup with plain Javascript. For database i'm using mongoDB installed localy and running on localhost. CSS built from scratch.
+> In this project i'm using EJS - a templating library to generate HTML markup with plain Javascript. For database i'm using mongoDB. CSS built from scratch.
 
 ## Installation
 
