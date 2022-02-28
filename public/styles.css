@@ -1,75 +1,153 @@
 html {
-    background-color: #8a8a8a;
-    font-family: "ubuntu";
+	background-color: #8a8a8a;
+	font-family: "ubuntu";
+	height: 100% !important;
 }
-
+body {
+	flex-direction: column !important;
+	height: 100% !important;
+	display: flex !important;
+	margin: 0;
+}
 h1 {
-    color: #fff;
-    padding: 10px;
+	margin: 0;
+	padding-top: 0.85rem;
+	color: #fff;
 }
-
-.box {
-    max-width: 400px;
-    margin: 50px auto;
-    background: #e3e3e3;
+.container {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
 }
-
+.d-flex {
+	display: flex !important;
+}
+.justify-content-center {
+	justify-content: center !important;
+}
+.m-top {
+	padding-top: 3rem !important;
+}
 #heading {
-    background-color: #4700c1;
-    text-align: center;
+	height: 65px;
+	background-color: #30475e;
+	text-align: center;
 }
-
+.box {
+	width: 425px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+ul {
+	margin: 0;
+	padding: 0 0 0 0;
+}
+form {
+	margin: 0 0.5rem 0 0.5rem;
+	padding-left: 1rem;
+	border-bottom: 1px solid #8a8a8a;
+}
+form.item {
+	height: 65px;
+}
+div.item:hover {
+	border-right: 2rem solid#f05454;
+	border-right-width: 0.25rem;
+}
 .item {
-    display: flex;
-    align-items: center;
+	min-height: 50px;
+	display: flex;
+	align-items: center;
 }
-
 .item:last-child {
-    border-bottom: 0;
-}
-
-input[type="checkbox"] {
-    margin: 0px;
-}
-ul div {
-    border-bottom: 1px solid #000000;
+	border-bottom: 0;
 }
 p {
-    margin: 0;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 30px;
-    padding-bottom: 6px;
-    border-width: 0;
-    color: #fff;
-    background-color: #5d00fd;
-}
-button[disabled] {
-    opacity: 0.1;
+	margin-left: 1rem;
+	font-size: 20px;
+	color: #00204a;
+	word-wrap: anywhere;
 }
 input[type="text"] {
-    text-align: center;
-    height: 60px;
-    top: 10px;
-    border: none;
-    font-size: 20px;
-    background: #e3e3e3;
+	text-align: center;
+	height: 50px;
+	width: 350px;
+	top: 10px;
+	border: none;
+	background: transparent;
+	font-size: 20px;
+	font-family: inherit;
+	color: #00204a;
 }
-
 input[type="text"]:focus {
-    outline: none;
+	outline: none;
+	box-shadow: inset 0 -1.5px 0 0 #f05454;
+}
+::placeholder {
+	--bs-text-opacity: 1;
+	color: #262b5e8f !important;
+	font-family: "ubuntu";
+	font-weight: 100;
+}
+button {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	border-color: transparent;
+	color: #fff;
+	font-size: 30px;
+	padding-bottom: 6px;
+	border-width: 0;
+	background-color: #f05454;
+	float: right;
+}
+button:hover {
+	background-color: #d32e2e;
+}
+button[disabled] {
+	opacity: 0;
+}
+.footer {
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 1rem !important;
+	padding-bottom: 1rem !important;
+	margin-top: auto !important;
+	border-top: 1px solid #ffffff83;
+	--bs-text-opacity: 1;
+	color: #585858 !important;
 }
 
-input[type="checkbox"] {
-    height: 20px;
-    width: 20px;
-    border-radius: 0.5em !important;
-    accent-color: #5d00fd;
+@media (max-width: 450px) {
+	.container,
+	.box {
+		max-width: 300px;
+	}
+	.item {
+		border: none;
+	}
+	form {
+		padding-left: 1rem;
+		border-bottom: 1px solid #8a8a8a;
+		margin-right: 0.5rem;
+		margin-left: 0.5rem;
+	}
+	form.item {
+		height: 52px;
+	}
+	p {
+		font-size: 1rem !important;
+	}
+	input[type="text"] {
+		font-size: 1rem !important;
+		height: 40px;
+		width: 220px;
+	}
+	button {
+		height: 44px;
+		width: 44px;
+	}
 }

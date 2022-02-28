@@ -31,9 +31,7 @@ app.get("/", (req, res) => {
 	Item.find({}, (err, foundItems) => {
 		if (foundItems.length === 0) {
 			Item.insertMany(defaultItems, (err) => {
-				if (err) {
-					console.log(err);
-				} else {
+				if (!err) {
 					console.log("Successfully saved default items to DB.");
 				}
 			});
@@ -82,7 +80,7 @@ app.post("/", (req, res) => {
 	if (listName === "Today") {
 		// adding to current list
 		item.save();
-		res.redirect("/"); // redirecting to home
+		res.redirect("/");
 	} else {
 		// in this case if its a different list then adding to item to the correct list, finding the coresponding lsit
 		List.findOne({ name: listName }, (err, foundList) => {
